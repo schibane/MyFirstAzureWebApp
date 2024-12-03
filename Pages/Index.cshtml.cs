@@ -1,5 +1,9 @@
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
+using System.Threading.Tasks;
 
 namespace MyFirstAzureWebApp.Pages
 {
@@ -12,9 +16,13 @@ namespace MyFirstAzureWebApp.Pages
             _logger = logger;
         }
 
-        public void OnGet()
-        {
+        public string SecretValue { get; private set; }
 
+        public async Task OnGetAsync()
+        {
+            var client = new SecretClient(new Uri("https://Said-vault.vault.azure.net/"), new DefaultAzureCredential());
+            KeyVaultSecret secret = await client.GetSecretAsync("etickets-admin");
+            SecretValue = secret.Value; // Store the secret value in a public property
         }
     }
 }

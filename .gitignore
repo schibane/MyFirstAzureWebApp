@@ -1,0 +1,96 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build directories
+/bin/
+/obj/
+/out/
+
+# Debug, Release, etc.
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio Code files
+.vscode/
+.vscode/*
+
+# Visual Studio files
+.vs/
+.vs/*
+
+# Windows image file caches
+*.thumb
+*.db
+
+# Folder config file
+desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# npm packages
+node_modules/
+
+# JetBrains Rider
+.idea/
+*.sublime-workspace
+
+# Generated files
+*.g.dart
+*.dll
+*.exe
+*.pdb
+
+# Test Results
+[Tt]est[Rr]esult*/ 
+TestResults/
+
+# Azure Pipelines
+.vsts/
+
+# Rider
+.idea/
+
+# Resharper
+*.DotSettings.user
+
+# Code coverage
+*.coverage
+*.coveragexml
+_Reports/
+.Report/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Publish directory
+publish/
+
+# Entity Framework
+*.edmx.diagram
+*.edmx.sql
